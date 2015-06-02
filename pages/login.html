@@ -1,0 +1,30 @@
+<div class="row">
+		<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+        	<div><img class="img-responsive" src="" /></div>
+			<div class="login-panel panel panel-default">
+				<div class="panel-heading">MyEmail Login</div>
+				<div class="panel-body">
+				<form role="form" name="loginForm">
+						<fieldset>
+							<div class="form-group">
+	<input type="text" class="form-control" placeholder="em number" name="emnumber" ng-model="login.emnumber" required focus/>
+							</div>
+							<div class="form-group">
+	<input type="password" class="form-control" placeholder="Password" name="password"  value="" ng-model="login.password" required/>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input name="remember" type="checkbox" value="Remember Me">Remember Me
+								</label>
+							</div>
+			
+                <button type="submit" class="btn  btn-primary" ng-click="doLogin(login)" data-ng-disabled="loginForm.$invalid">
+                 Login
+                </button>
+            <div class="col-sm-7">Don't have an account? <a href="#/signup">Signup</a>
+				</fieldset>
+					</form>
+				</div>
+			</div>
+		</div><!-- /.col-->
+	</div><!-- /.row -->	

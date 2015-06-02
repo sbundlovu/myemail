@@ -1,0 +1,54 @@
+	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+		<ul class="nav menu">
+			<li class="active"><a href="index.html"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
+			<li><a href=""><span class="glyphicon glyphicon-usd"></span>your Sponsors</a></li>
+			<li><a href=""><span class="glyphicon glyphicon-user"></span>Update your Bank Account</a></li>
+			<li><a href=""><span class="glyphicon glyphicon-home"></span> people Under you</a></li>
+			<li><a href=""><span class="glyphicon glyphicon-usd"></span>your daily Income</a></li>
+			<li><a href="login.html"><span class="glyphicon glyphicon-user"></span> Logout</a></li>
+		</ul>
+	</div>
+<!--/.sidebar-->
+<div class="col-md-8">
+ <div class="profile-card">
+
+        <img src="images/viva.jpg" class="profile-image">
+        <div class="profile-name">welcome to {{names}} Associates</div>
+        <div class="profile-id">cell:{{cell}}</div>
+        <div class="profile-id">email:{{email}} </div>
+        <div class="profile-desc">banking info :{{bank_d}}</div>
+
+      </div>
+      <div class="row">
+			<div class="col-lg-12">
+                <div class="alert alert-success" role="alert"><span>Welcome user,</span> so on and soh on</div>
+                <div class="alert alert-info" role="alert">
+                <h3>Associates</h3>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th ng-repeat="header in headers">{{header}}</th>     
+            <th>User em-number</th>      
+            <th>Names</th>      
+            <th>Banking Details</th>               
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="user in users">
+           
+            <td>{{user.s_code}}</td>
+            <td>{{user.names}}</td>
+            <td>{{user.bank_d}}</td>
+        </tr>
+    </tbody>
+</table>
+
+                </div>
+			</div>
+		</div><!--/.row-->
+
+
+			</div>		
+		
+	<!--/.main-->

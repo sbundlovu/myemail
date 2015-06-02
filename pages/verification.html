@@ -1,0 +1,38 @@
+	
+	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+		<ul class="nav menu">
+			<li class="active"><a href="index.html"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
+			<li><a href=""><span class="glyphicon glyphicon-usd"></span>your Sponsors</a></li>
+			<li><a href=""><span class="glyphicon glyphicon-user"></span>Update your Bank Account</a></li>
+			<li><a href=""><span class="glyphicon glyphicon-home"></span> people Under you</a></li>
+			<li><a href=""><span class="glyphicon glyphicon-usd"></span>your daily Income</a></li>
+			<li><a href="login.html"><span class="glyphicon glyphicon-user"></span> Logout</a></li>
+		</ul>
+	</div>
+<!--/.sidebar-->
+						
+		<div class="row row-margin-top">
+			<div class="col-md-8">
+			
+				<div class="login-panel panel panel-default chat">
+					<div class="panel-heading"><span class="glyphicon glyphicon-comment"></span>Enter Sponsor Code</div>
+	<div class="alert alert-info" role="alert">if you dont have sponsor code just type 10011 Continue...the system will provide you one. </div>
+					
+					<div class="panel-footer">
+						<div class="input-group">
+                        <form role="form" name="verification">
+                        <input id="btn-input" type="text" name="sponsor_code" class="form-control input-md" placeholder="Type sponsor code here..." ng-model="login.sponsor_code" />
+							<span class="input-group-btn">
+								<button class="btn btn-success btn-md" id="btn-chat" ng-click="verify(login)">Continue</button>
+							</span>
+                            
+                            </form>						
+                            </div>
+					</div>
+				</div>
+			</div><!--/.col-->
+			
+			
+		</div><!--/.row-->
+	</div>	
+<!--/.main-->

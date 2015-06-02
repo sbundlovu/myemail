@@ -1,0 +1,48 @@
+<div class="row">
+       
+		<div class=" col-md-8">
+        	<div><img class="img-responsive" src="../../rsvpme/TAP/pages/img/login_logo.png" /></div>
+			<div class="login-panel panel panel-default">
+				<div class="panel-heading">myEmail Signup Page</div>
+				<div class="panel-body">
+				<form role="form" name="signupForm">
+						<fieldset>
+							<div class="form-group">
+	<input type="text" class="form-control" placeholder="Enter name and surname" name="names"  ng-model="signup.names" required focus/>
+							</div>
+                          
+							<div class="form-group">
+	<input type="text" class="form-control" placeholder="email" name="email" ng-model="signup.email" required />
+                           <span ng-show="signupForm.email.$error.email" class="help-inline">Email is not valid</span>
+							</div>
+                            
+                            <div class="form-group">
+	<input type="text" class="form-control" placeholder="Enter your cell" name="cell" ng-model="signup.cell" required />
+                          
+							</div>
+                            
+							<div class="form-group">
+	<input type="password" class="form-control" placeholder="Password" name="password"  ng-model="signup.password" required/>
+      <small class="errorMessage" data-ng-show="signupForm.password.$dirty && signupForm.password.$invalid"> Enter Password.</small>
+							</div>
+                            <div class="form-group">
+	<input type="password" class="form-control" placeholder="confirm Password" name="password2"   ng-model="signup.password2" password-match="signup.password" required/>
+  <small class="errorMessage" data-ng-show="signupForm.password2.$dirty && signupForm.password2.$error.required"> Enter password again.</small>
+
+ <small class="errorMessage" data-ng-show="signupForm.password2.$dirty && signupForm.password2.$error.passwordNoMatch && !signupForm.password2.$error.required"> Password do not match.</small>
+    
+							</div>
+						
+                <button type="submit" class="btn  btn-primary" ng-click="signUp(signup)" data-ng-disabled="signupForm.$invalid">
+                 Login
+                </button>
+            
+				</fieldset>
+					</form>
+				</div>
+			</div>
+		</div><!-- /.col-->
+        <div class="col-md-4"><div>
+        <img class="img-responsive" src="../../rsvpme/TAP/pages/img/login_logo.png" /></div>
+        </div> <!-- /.col-md-4-->
+	</div><!-- /.row -->	
